@@ -1,4 +1,4 @@
-Задача 1
+""" Задача 1
 
 num = '10,56321'
 num=num.replace(',','')
@@ -45,12 +45,10 @@ for i in range(-n, n + 1):
     array.append(i)
 print(array)
 
-userInput = input(f"Введите числа от 0 до {n * 2} через пробел: ")
-userInput = userInput.replace(' ', '')
-
-
-for i in userInput:
-    result = result * array[int(i)]
+num1 = int(input(f"Введите числа от 0 до {n * 2} через пробел: "))
+num2 = int(input(f"Введите числа от 0 до {n * 2} через пробел: "))
+for i in array:
+    result = array[num1] * array[num2]
 print("Произведение элементов на указанных позициях равно: ", result)
 
 
@@ -60,4 +58,6 @@ import random
 
 my_list=[1,3,2,4,5,6]
 random.shuffle(my_list)
-print(my_list)
+print(my_list) """
+
+
