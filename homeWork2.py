@@ -37,18 +37,23 @@ print("Сумма элементов списка равна", summ)
 
 Задача 4
 
+from random import random
+
+
 n = int(input('Введите число: '))
-array = []
+myList = []
 result = 1
 
-for i in range(-n, n + 1):
-    array.append(i)
-print(array)
+for i in range(0, n + 1):
+    myList.append(random.randint(-n,n))
+print(myList)
 
-num1 = int(input(f"Введите числа от 0 до {n * 2} через пробел: "))
-num2 = int(input(f"Введите числа от 0 до {n * 2} через пробел: "))
-for i in array:
-    result = array[num1] * array[num2]
+userInput = input(f"Введите числа от 0 до {n * 2} через пробел: ")
+userInput = userInput.split()
+
+
+for i in userInput:
+    result = result * myList[int(i)]
 print("Произведение элементов на указанных позициях равно: ", result)
 
 
@@ -59,5 +64,6 @@ import random
 my_list=[1,3,2,4,5,6]
 random.shuffle(my_list)
 print(my_list) """
+
 
 
